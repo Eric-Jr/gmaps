@@ -6,8 +6,8 @@ require 'functions.php';
 $conn = connect($config);
 
 if ($conn) {
-	$getLatitude = 'SELECT * FROM location_data';
-	$results = query($getLatitude, $conn);
+	$dbDump = 'SELECT * FROM location_data';
+	$results = query($dbDump, $conn);
 }
 
 else {
